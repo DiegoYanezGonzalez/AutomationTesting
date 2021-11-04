@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'AutomationTesting'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 17
+
+repositories{
+    mavenCentral()
+}
+
+dependencies{
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '6.11.0'
+    testImplementation 'io.cucumber:cucumber-junit:4.2.0'
+}
