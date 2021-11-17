@@ -2,26 +2,28 @@ package steps;
 
 
 import cucumber.api.java.en.*;
-import pages.GooglePage;
+import pages.TellotecPage;
 
 
-public class GoogleSteps {
+public class TellotecSteps {
 
-    GooglePage google = new GooglePage();
+    TellotecPage tellotec = new TellotecPage();
     
     @Given("^I am on the Google search page$")
         public void navigateToGoogle(){
-            google.navigateToGoogle();
+            tellotec.navigateToGoogle();
+            
+            
     }
 
     @When("^I enter a search criteria$")
         public void enterSearchCriteria(){
-
+            tellotec.enterSearchCriteria("Foco");
     }
 
     @And("^click on the search button$")
         public void clickSearchButton(){
-
+            tellotec.clickTellotecSearch();
     }
 
     @Then("^the results match the criteria$")
