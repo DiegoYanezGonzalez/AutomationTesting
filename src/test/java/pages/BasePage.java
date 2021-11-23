@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -12,6 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class BasePage {
     protected static WebDriver driver;
     private static WebDriverWait wait;
+    private static Actions action;
 
     static{
         ChromeOptions chromeOptions = new ChromeOptions();
@@ -57,6 +59,19 @@ public class BasePage {
         Select dropdown = new Select (Find(locator));
 
         dropdown.selectByVisibleText(valueToSelect);
+    }
+
+    public void hoverOverElement(String locator){
+        action.moveToElement(Find(locator));
+    }
+
+    public void doubleClick(String locator){
+        action.doubleClick(Find(locator));
+    }
+    
+    public void rightClick(String locator){
+        action.contextClick(Find(locator));
+
     }
 
 
