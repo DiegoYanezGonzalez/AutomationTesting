@@ -18,7 +18,7 @@ public class BasePage {
     static{
         ChromeOptions chromeOptions = new ChromeOptions();
         driver =  new ChromeDriver(chromeOptions); 
-        wait = new WebDriverWait(driver,10);
+        wait = new WebDriverWait(driver,20);
     }
 
     public BasePage(WebDriver driver){  
@@ -74,7 +74,17 @@ public class BasePage {
 
     }
 
+    public String getValueFromTable(String locator, int row, int column){
+        String cellINeed = locator+"/table/tbody/tr["+row+"]/td["+column+"]";
 
+        return Find(cellINeed).getText();
+    }
+
+    public void setValueOnTable(String locator, int row, int column, String stringToSend){
+        String cellToFill = locator+"/table/tbody/tr["+row+"]/td["+column+"]";
+
+        Find(cellToFill).sendKeys(stringToSend);
+    }
 
 
 }
