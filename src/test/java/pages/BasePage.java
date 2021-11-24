@@ -87,4 +87,16 @@ public class BasePage {
     }
 
 
+    public void switchToiFrame(String iFrameIndex){
+        driver.switchTo().frame(iFrameIndex);
+    }
+
+    public void switchToParentFrame(){
+        driver.switchTo().parentFrame();
+    }
+
+    public void dismissAlert(){
+        driver.switchTo().alert().dismiss();
+    }
+
 }
