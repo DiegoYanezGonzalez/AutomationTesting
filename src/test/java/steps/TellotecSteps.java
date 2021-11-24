@@ -1,6 +1,8 @@
 package steps;
 
 
+import org.junit.Assert;
+
 import cucumber.api.java.en.*;
 import pages.TellotecPage;
 
@@ -28,6 +30,7 @@ public class TellotecSteps {
 
     @Then("^the results match the criteria$")
         public void validateResults(){
+            Assert.assertEquals("Texto que esperamos",tellotec.firstResult());
 
     }
 

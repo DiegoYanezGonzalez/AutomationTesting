@@ -38,3 +38,28 @@ _iFromes y Popups_
 
 Son anuncios o fragmentos de comunmente videos o imagenes.
 
+
+_Assertions_
+
+
+En la clase Base Page se genera un metodo en la base page que devuelve el text de un elemento, 
+
+public String textFromElement(String locator){
+        return Find(locator).getText();
+    }
+
+para ocuparlo en la clase page donde se conecta con elemento que sera donde se extraiga el text,
+
+ private String firtsResult = "";
+ public String firstResult(){
+        return textFromElement(firtsResult);
+    }
+
+
+ del cual finalmente en la clase de Steps con un metodo de validacion del resultado,  
+
+ @Then("^the results match the criteria$")
+        public void validateResults(){
+            Assert.assertEquals("Texto que esperamos",tellotec.firstResult());
+
+    }
