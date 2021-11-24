@@ -63,3 +63,8 @@ para ocuparlo en la clase page donde se conecta con elemento que sera donde se e
             Assert.assertEquals("Texto que esperamos",tellotec.firstResult());
 
     }
+
+
+_AsserEquals_
+
+Prueba que algo es igual a otra.
