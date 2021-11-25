@@ -22,7 +22,7 @@ public void searchTheList() throws InterruptedException {
 @Then("^I can find the text in the list$")
 public void theTableIsThere() {
     List <String> lista = list.getAllSearchResults();
-    boolean textIsThere = lista.contains("Seattle, Washington");
+    boolean textIsThere = lista.contains("Seatt, Washington");
 
     if(textIsThere){
         System.out.println("The text is on the list : PASSES.");
