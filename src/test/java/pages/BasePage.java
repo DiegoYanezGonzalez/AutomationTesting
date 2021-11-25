@@ -30,6 +30,10 @@ public class BasePage {
         driver.get(url);
     }
 
+    public static void cleanBrowser(){
+        driver.quit();
+    }
+
     private WebElement Find (String locator){
         return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
     }
