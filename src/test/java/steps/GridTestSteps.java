@@ -1,7 +1,6 @@
 package steps;
 
 import org.junit.Assert;
-
 import cucumber.api.java.en.*;
 import pages.GridPage;
 
@@ -21,5 +20,11 @@ public class GridTestSteps {
 
         Assert.assertEquals("r: 2, c: 1", value);
     }
+
+    @Then("^I can validate the table is displayed$")
+public void theTableIsThere() {
+   Assert.assertTrue("ERROR", grid.cellStatus());
+}
+
     
 }

@@ -68,3 +68,8 @@ para ocuparlo en la clase page donde se conecta con elemento que sera donde se e
 _AsserEquals_
 
 Prueba que algo es igual a otra.
+
+ @Then("^I can validate the table is displayed$")
+public void theTableIsThere() {
+   Assert.assertTrue("ERROR", grid.cellStatus());
+}

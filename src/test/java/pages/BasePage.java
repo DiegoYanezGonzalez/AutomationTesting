@@ -102,6 +102,23 @@ public class BasePage {
     public String textFromElement(String locator){
         return Find(locator).getText();
     }
+
+    public boolean elementEnabled(String locator){
+        
+        return Find(locator).isEnabled();
+    }
+
+    public boolean elementIsDisplayed(String locator){
+
+        return Find(locator).isDisplayed();
+
+    }
+
+    public boolean elementIsSelected(String locator){
+        return Find(locator).isSelected();
+    }
+
+
   
 
 }

@@ -5,7 +5,12 @@ Feature: Test different actions on a dropdown page.
      Given I navigate to the dropdown page
         And select a value from the dropdown 
 
-@Test
+
 Scenario: As a Test Engineer, I want to retrieve the value of a static table.
     Given I navigate to the static table
         Then I can return the value I wanted
+
+@Test
+Scenario: As a Test Engineer, I want to retrieve the value of a static table is displayed.
+    Given I navigate to the static table
+        Then I can validate the table is displayed
