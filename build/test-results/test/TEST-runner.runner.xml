@@ -2,18 +2,11 @@
 <testsuite name="runner.runner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="192.168.0.105" time="0.0">
   <properties/>
   <system-out><![CDATA[
-Failed scenarios:
-src/test/resources/features/ListPageTests.feature:12 # Scenario Outline name: Snecario Outline name: As a Test Engineer, I want to validate that a text is present inside the list.
-
-2 Scenarios (1 failed, 1 passed)
-6 Steps (1 failed, 5 passed)
-0m7,136s
-
-java.lang.Error: The text is not on the list : FAILED!
-	at steps.ListSteps.theTableIsThere(ListSteps.java:31)
-	at ?.I can find Seattle, Washington in the list(src/test/resources/features/ListPageTests.feature:8)
-
+1 Scenarios (1 passed)
+2 Steps (2 passed)
+0m9,481s
 
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[WARNING: Found tags option '@Grid,'. Support for '@tag1,@tag2' will be removed from the next release of Cucumber-JVM. Please use '@tag or @tag2' instead
+]]></system-err>
 </testsuite>

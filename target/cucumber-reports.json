@@ -1,0 +1,76 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Navigate to Table web app.",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4884930432,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I navigate to the static table",
+            "match": {
+              "location": "GridTestSteps.navigateToGridPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "As a Test Engineer, I want to retrieve the value of a static table.",
+        "description": "",
+        "id": "test-different-actions-on-the-static-table-page;as-a-test-engineer--i-want-to-retrieve-the-value-of-a-static-table.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4179824763,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I can return the value I wanted",
+            "match": {
+              "location": "GridTestSteps.returnValue()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Grid"
+          },
+          {
+            "name": "@Smoke"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Test different actions on the Static Table page",
+    "description": "Rule: The user can return values from the table and validate then.",
+    "id": "test-different-actions-on-the-static-table-page",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/StaticTableTests.feature",
+    "tags": [
+      {
+        "name": "@Grid",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

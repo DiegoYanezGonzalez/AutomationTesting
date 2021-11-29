@@ -20,6 +20,8 @@ dependencies{
     implementation group: 'io.cucumber', name: 'cucumber-java', version: '4.2.0'
     testImplementation 'io.cucumber:cucumber-junit:4.2.0'
     implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.32'
+    implementation group: 'com.aventstack', name: 'extentreports-cucumber4-adapter', version: '1.0.7'
+
 
 }
 

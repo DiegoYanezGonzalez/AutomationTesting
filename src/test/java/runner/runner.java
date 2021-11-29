@@ -10,6 +10,7 @@ import pages.BasePage;
 @CucumberOptions(
     features = "src/test/resources/features",
     monochrome = true,//makes the output cleaner
+    plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", "json:target/cucumber-reports.json"},
     glue = "steps",
     tags = "@List"
 )
