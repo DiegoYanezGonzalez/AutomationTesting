@@ -73,3 +73,5 @@ Prueba que un elemento texto o algo sea igual a lo que se compara.
 public void theTableIsThere() {
    Assert.assertTrue("ERROR", grid.cellStatus());
 }
+
+
