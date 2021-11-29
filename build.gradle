@@ -25,4 +25,6 @@ dependencies{
 
 test{
     systemProperty "cucumber.options", System.getProperty("cucumber.options")
+    //This command will run the tests according to the tags, just as we did in the Runner.
+    //gradle test -Dcucumber.options="--tags @Grid, --tags @Smoke"
 }

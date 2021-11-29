@@ -9,6 +9,8 @@ import pages.BasePage;
 @RunWith(Cucumber.class)
 @CucumberOptions(
     features = "src/test/resources/features",
+    monochrome = true,//makes the output cleaner
+
     glue = "steps",
     tags = "@Grid"
 )
