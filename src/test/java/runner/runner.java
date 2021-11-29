@@ -10,9 +10,8 @@ import pages.BasePage;
 @CucumberOptions(
     features = "src/test/resources/features",
     monochrome = true,//makes the output cleaner
-
     glue = "steps",
-    tags = "@Grid"
+    tags = "@List"
 )
 
 public class runner{
